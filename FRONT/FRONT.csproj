@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{74464862-DC18-4033-B02B-516684540F14}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FRONT</RootNamespace>
+    <AssemblyName>FRONT</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1586.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABM_Alquiler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM_Alquiler.Designer.cs">
+      <DependentUpon>ABM_Alquiler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM_Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM_Empleado.Designer.cs">
+      <DependentUpon>ABM_Empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM_Unidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM_Unidad.Designer.cs">
+      <DependentUpon>ABM_Unidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM_Cliente.Designer.cs">
+      <DependentUpon>ABM_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM_Roles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM_Roles.Designer.cs">
+      <DependentUpon>ABM_Roles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABM_Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABM_Usuarios.Designer.cs">
+      <DependentUpon>ABM_Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ACTUALIZAR_Estados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACTUALIZAR_Estados.Designer.cs">
+      <DependentUpon>ACTUALIZAR_Estados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Backup_Restore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Backup_Restore.Designer.cs">
+      <DependentUpon>Backup_Restore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BITACORA_Registros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BITACORA_Registros.Designer.cs">
+      <DependentUpon>BITACORA_Registros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BUSCAR_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BUSCAR_Cliente.Designer.cs">
+      <DependentUpon>BUSCAR_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BUSCAR_Cobros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BUSCAR_Cobros.Designer.cs">
+      <DependentUpon>BUSCAR_Cobros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BUSCAR_Facturaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BUSCAR_Facturaciones.Designer.cs">
+      <DependentUpon>BUSCAR_Facturaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHART.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHART.Designer.cs">
+      <DependentUpon>CHART.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\UC_cmbEstados.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\UC_cmbEstados.Designer.cs">
+      <DependentUpon>UC_cmbEstados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\UC_cmbPuestoEmpleado.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\UC_cmbPuestoEmpleado.Designer.cs">
+      <DependentUpon>UC_cmbPuestoEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\UC_DGV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\UC_DGV.Designer.cs">
+      <DependentUpon>UC_DGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\UC_txtNumeroyTexto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\UC_txtNumeroyTexto.Designer.cs">
+      <DependentUpon>UC_txtNumeroyTexto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\UC_txtSoloDecimal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\UC_txtSoloDecimal.Designer.cs">
+      <DependentUpon>UC_txtSoloDecimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\UC_txtSoloNumeros.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\UC_txtSoloNumeros.Designer.cs">
+      <DependentUpon>UC_txtSoloNumeros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\UC_txtSoloTexto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\UC_txtSoloTexto.Designer.cs">
+      <DependentUpon>UC_txtSoloTexto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\UC_txtTelefono.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\UC_txtTelefono.Designer.cs">
+      <DependentUpon>UC_txtTelefono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\UC_Login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\UC_Login.Designer.cs">
+      <DependentUpon>UC_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROL_CuentaCorriente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONTROL_CuentaCorriente.Designer.cs">
+      <DependentUpon>CONTROL_CuentaCorriente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Generar_Factura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Generar_Factura.Designer.cs">
+      <DependentUpon>Generar_Factura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERMISOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PERMISOS.Designer.cs">
+      <DependentUpon>PERMISOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="REPORTEAlquileres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTEAlquileres.Designer.cs">
+      <DependentUpon>REPORTEAlquileres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="UI_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Menu.Designer.cs">
+      <DependentUpon>UI_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ABM_Alquiler.resx">
+      <DependentUpon>ABM_Alquiler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM_Empleado.resx">
+      <DependentUpon>ABM_Empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM_Roles.resx">
+      <DependentUpon>ABM_Roles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM_Unidad.resx">
+      <DependentUpon>ABM_Unidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM_Cliente.resx">
+      <DependentUpon>ABM_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABM_Usuarios.resx">
+      <DependentUpon>ABM_Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACTUALIZAR_Estados.resx">
+      <DependentUpon>ACTUALIZAR_Estados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Backup_Restore.resx">
+      <DependentUpon>Backup_Restore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BITACORA_Registros.resx">
+      <DependentUpon>BITACORA_Registros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BUSCAR_Cliente.resx">
+      <DependentUpon>BUSCAR_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BUSCAR_Cobros.resx">
+      <DependentUpon>BUSCAR_Cobros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BUSCAR_Facturaciones.resx">
+      <DependentUpon>BUSCAR_Facturaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHART.resx">
+      <DependentUpon>CHART.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\UC_cmbEstados.resx">
+      <DependentUpon>UC_cmbEstados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\UC_cmbTipoEmpleado.resx">
+      <DependentUpon>UC_cmbPuestoEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\UC_DGV.resx">
+      <DependentUpon>UC_DGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\UC_txtNumeroyTexto.resx">
+      <DependentUpon>UC_txtNumeroyTexto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\UC_txtSoloDecimal.resx">
+      <DependentUpon>UC_txtSoloDecimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\UC_txtSoloNumeros.resx">
+      <DependentUpon>UC_txtSoloNumeros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\UC_txtSoloTexto.resx">
+      <DependentUpon>UC_txtSoloTexto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\UC_txtTelefono.resx">
+      <DependentUpon>UC_txtTelefono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\UC_Login.resx">
+      <DependentUpon>UC_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CONTROL_CuentaCorriente.resx">
+      <DependentUpon>CONTROL_CuentaCorriente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generar_Factura.resx">
+      <DependentUpon>Generar_Factura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERMISOS.resx">
+      <DependentUpon>PERMISOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="REPORTEAlquileres.resx">
+      <DependentUpon>REPORTEAlquileres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTEdeAlquileres.rdlc" />
+    <EmbeddedResource Include="UI_Menu.resx">
+      <DependentUpon>UI_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\ABM_Alquiler.datasource" />
+    <None Include="Properties\DataSources\ABM_Cliente.datasource" />
+    <None Include="Properties\DataSources\ABM_Empleado.datasource" />
+    <None Include="Properties\DataSources\ABM_Roles.datasource" />
+    <None Include="Properties\DataSources\ABM_Unidad.datasource" />
+    <None Include="Properties\DataSources\ABM_Usuarios.datasource" />
+    <None Include="Properties\DataSources\ACTUALIZAR_Estados.datasource" />
+    <None Include="Properties\DataSources\Backup_Restore.datasource" />
+    <None Include="Properties\DataSources\BE.BE_Alquiler.datasource" />
+    <None Include="Properties\DataSources\BE.BE_Cliente.datasource" />
+    <None Include="Properties\DataSources\BE.BE_Comprobante.datasource" />
+    <None Include="Properties\DataSources\BE.BE_ComprobanteCobroAlquiler.datasource" />
+    <None Include="Properties\DataSources\BE.BE_ComprobanteFactura.datasource" />
+    <None Include="Properties\DataSources\BE.BE_CuentaCorriente.datasource" />
+    <None Include="Properties\DataSources\BE.BE_Empleado.datasource" />
+    <None Include="Properties\DataSources\BE.BE_EmpleadoAdministrativo.datasource" />
+    <None Include="Properties\DataSources\BE.BE_EmpleadoGenerico.datasource" />
+    <None Include="Properties\DataSources\BE.BE_EmpleadoGerente.datasource" />
+    <None Include="Properties\DataSources\BE.BE_EmpleadoVendedor.datasource" />
+    <None Include="Properties\DataSources\BE.BE_Reporte.datasource" />
+    <None Include="Properties\DataSources\BE.BE_RolUsuarios.datasource" />
+    <None Include="Properties\DataSources\BE.BE_Unidades.datasource" />
+    <None Include="Properties\DataSources\BE.BE_Usuario.datasource" />
+    <None Include="Properties\DataSources\BITACORA_Registros.datasource" />
+    <None Include="Properties\DataSources\BLL.BLL_Alquiler.datasource" />
+    <None Include="Properties\DataSources\BLL.BLL_BackupRestore.datasource" />
+    <None Include="Properties\DataSources\BLL.BLL_Cliente.datasource" />
+    <None Include="Properties\DataSources\BLL.BLL_ComprobanteCobroAlquiler.datasource" />
+    <None Include="Properties\DataSources\BLL.BLL_ComprobanteFactura.datasource" />
+    <None Include="Properties\DataSources\BLL.BLL_CuentaCorriente.datasource" />
+    <None Include="Properties\DataSources\BLL.BLL_Empleado.datasource" />
+    <None Include="Properties\DataSources\BLL.BLL_GenerarComprobante.datasource" />
+    <None Include="Properties\DataSources\BLL.BLL_Login.datasource" />
+    <None Include="Properties\DataSources\BLL.BLL_Menu.datasource" />
+    <None Include="Properties\DataSources\BLL.BLL_Permiso.datasource" />
+    <None Include="Properties\DataSources\BLL.BLL_Reporte.datasource" />
+    <None Include="Properties\DataSources\BLL.BLL_Rol.datasource" />
+    <None Include="Properties\DataSources\BLL.BLL_Unidad.datasource" />
+    <None Include="Properties\DataSources\BLL.BLL_Usuario.datasource" />
+    <None Include="Properties\DataSources\BLL.BLL_Usuario_Rol.datasource" />
+    <None Include="Properties\DataSources\BUSCAR_Cliente.datasource" />
+    <None Include="Properties\DataSources\BUSCAR_Cobros.datasource" />
+    <None Include="Properties\DataSources\BUSCAR_Facturaciones.datasource" />
+    <None Include="Properties\DataSources\CHART.datasource" />
+    <None Include="Properties\DataSources\CONTROL_CuentaCorriente.datasource" />
+    <None Include="Properties\DataSources\FRONT.Controles.UC_cmbEstados.datasource" />
+    <None Include="Properties\DataSources\FRONT.Controles.UC_cmbPuestoEmpleado.datasource" />
+    <None Include="Properties\DataSources\FRONT.Controles.UC_DGV.datasource" />
+    <None Include="Properties\DataSources\FRONT.Controles.UC_Login.datasource" />
+    <None Include="Properties\DataSources\FRONT.Controles.UC_txtNumeroyTexto.datasource" />
+    <None Include="Properties\DataSources\FRONT.Controles.UC_txtSoloDecimal.datasource" />
+    <None Include="Properties\DataSources\FRONT.Controles.UC_txtSoloNumeros.datasource" />
+    <None Include="Properties\DataSources\FRONT.Controles.UC_txtSoloTexto.datasource" />
+    <None Include="Properties\DataSources\FRONT.Controles.UC_txtTelefono.datasource" />
+    <None Include="Properties\DataSources\FRONT.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\FRONT.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\Generar_Factura.datasource" />
+    <None Include="Properties\DataSources\LOGIN.datasource" />
+    <None Include="Properties\DataSources\PERMISOS.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\REPORTEAlquileres.datasource" />
+    <None Include="Properties\DataSources\Service.S_BackupRestore.datasource" />
+    <None Include="Properties\DataSources\Service.S_Componente.datasource" />
+    <None Include="Properties\DataSources\Service.S_Comprobante.datasource" />
+    <None Include="Properties\DataSources\Service.S_Compuesto.datasource" />
+    <None Include="Properties\DataSources\Service.S_Encriptar.datasource" />
+    <None Include="Properties\DataSources\Service.S_Hoja.datasource" />
+    <None Include="Properties\DataSources\Service.S_ImprimirComprobantes.datasource" />
+    <None Include="Properties\DataSources\Service.S_Registros.datasource" />
+    <None Include="Properties\DataSources\Service.S_UsuarioLogueado.datasource" />
+    <None Include="Properties\DataSources\UI_Menu.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BE\BE.csproj">
+      <Project>{eb2a0e58-a92f-496c-9628-87c7e0d84bee}</Project>
+      <Name>BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{69290665-0f48-4db6-84ee-29ca504c4f5f}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Service\Service.csproj">
+      <Project>{8aa45e5d-b5c4-4c23-a3b3-f92c9a63b1ff}</Project>
+      <Name>Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
