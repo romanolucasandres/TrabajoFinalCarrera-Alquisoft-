@@ -55,7 +55,6 @@
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
             this.cHARTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
             this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
@@ -85,10 +84,11 @@
             this.toolStripMenuItem6,
             this.toolStripMenuItem7,
             this.toolStripMenuItem8});
+            this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 180, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(352, 1100);
+            this.menuStrip1.Size = new System.Drawing.Size(32, 1100);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "MENÚ";
             // 
@@ -322,7 +322,7 @@
             this.bACKUPToolStripMenuItem.BackColor = System.Drawing.Color.OrangeRed;
             this.bACKUPToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.bACKUPToolStripMenuItem.Name = "bACKUPToolStripMenuItem";
-            this.bACKUPToolStripMenuItem.Size = new System.Drawing.Size(224, 36);
+            this.bACKUPToolStripMenuItem.Size = new System.Drawing.Size(213, 36);
             this.bACKUPToolStripMenuItem.Text = "- BACKUP";
             this.bACKUPToolStripMenuItem.Visible = false;
             this.bACKUPToolStripMenuItem.Click += new System.EventHandler(this.bACKUPToolStripMenuItem_Click);
@@ -332,7 +332,7 @@
             this.rESTOREToolStripMenuItem.BackColor = System.Drawing.Color.OrangeRed;
             this.rESTOREToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.rESTOREToolStripMenuItem.Name = "rESTOREToolStripMenuItem";
-            this.rESTOREToolStripMenuItem.Size = new System.Drawing.Size(224, 36);
+            this.rESTOREToolStripMenuItem.Size = new System.Drawing.Size(213, 36);
             this.rESTOREToolStripMenuItem.Text = "- RESTORE";
             this.rESTOREToolStripMenuItem.Visible = false;
             this.rESTOREToolStripMenuItem.Click += new System.EventHandler(this.rESTOREToolStripMenuItem_Click);
@@ -352,8 +352,7 @@
             // toolStripMenuItem8
             // 
             this.toolStripMenuItem8.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cHARTToolStripMenuItem,
-            this.toolStripMenuItem11});
+            this.cHARTToolStripMenuItem});
             this.toolStripMenuItem8.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripMenuItem8.ForeColor = System.Drawing.Color.White;
             this.toolStripMenuItem8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -372,15 +371,6 @@
             this.cHARTToolStripMenuItem.Size = new System.Drawing.Size(227, 36);
             this.cHARTToolStripMenuItem.Text = "- GRAFICOS";
             this.cHARTToolStripMenuItem.Click += new System.EventHandler(this.cHARTToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem11
-            // 
-            this.toolStripMenuItem11.BackColor = System.Drawing.Color.OrangeRed;
-            this.toolStripMenuItem11.ForeColor = System.Drawing.Color.White;
-            this.toolStripMenuItem11.Name = "toolStripMenuItem11";
-            this.toolStripMenuItem11.Size = new System.Drawing.Size(227, 36);
-            this.toolStripMenuItem11.Text = "- LISTADO";
-            this.toolStripMenuItem11.Click += new System.EventHandler(this.toolStripMenuItem11_Click);
             // 
             // button3
             // 
@@ -552,7 +542,6 @@
         private System.Windows.Forms.ToolStripMenuItem cHARTToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem9;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem10;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem11;
         private System.Windows.Forms.ToolStripMenuItem aLQUILERToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fACTURARToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aBMCLIENTESToolStripMenuItem;

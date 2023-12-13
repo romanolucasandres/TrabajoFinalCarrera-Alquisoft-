@@ -34,7 +34,7 @@ namespace FRONT
         PERMISOS permisos;
         CHART chart;
         ACTUALIZAR_Estados actualizar;
-        REPORTEAlquileres reportEAlquileres;
+      
         #endregion
 
         #region BLL
@@ -537,26 +537,7 @@ namespace FRONT
             }
         }
 
-        private void toolStripMenuItem11_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (reportEAlquileres != null)
-                    reportEAlquileres.BringToFront();
-                else
-                {
-                    reportEAlquileres = new REPORTEAlquileres();
-                    reportEAlquileres.FormClosed += (o, args) => reportEAlquileres = null;
-                    reportEAlquileres.MdiParent = this;
-                    reportEAlquileres.WindowState = FormWindowState.Normal;
-                    reportEAlquileres.Show();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Importante", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-            }
-        }
+       
 
         private void aLQUILERToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -639,7 +620,7 @@ namespace FRONT
                     buscarc = new BUSCAR_Cliente(false);
                     buscarc.FormClosed += (o, args) => buscarc = null;
                     buscarc.MdiParent = this;
-                    buscarc.WindowState = FormWindowState.Maximized;
+                    buscarc.WindowState = FormWindowState.Normal;
                     buscarc.Show();
                 }
             }

@@ -186,7 +186,7 @@
   <data name="button4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAAADx0RVh0Q29tbWVudAB4cjpkOkRBRnMxcTVCblR3OjM3LGo6ODQ2NjA1MDQ5NTk1
+        vAAADrwBlbxySQAAADx0RVh0Q29tbWVudAB4cjpkOkRBRnMxcTVCblR3OjM3LGo6ODQ2NjA1MDQ5NTk1
         ODE0NTE1OSx0OjIzMTExMzE4zV9V+gAAAzZJREFUWEflWLtuE0EUdUFBQQtyFySQMIm9Tkd4WESI0IZY
         ovL+A4WVL6BISUHBB1BQBT6BgoKCgoKSniQ1RQoX4ZzJWXt2dmZ3dtnYiTjSlVZzX2fnde9u57/Aw1vd
         69Nesja9P3hgBM8ck3r5eHSze2PaG0yOxumH33uTX0d7kzOfGB1saEsfuV8c9vvDO8ev0vdIfuqSiZBT
@@ -803,6 +803,9 @@
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="uC_DGV1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.2pt</value>
   </data>
   <data name="uC_DGV1.Location" type="System.Drawing.Point, System.Drawing">
     <value>81, 345</value>

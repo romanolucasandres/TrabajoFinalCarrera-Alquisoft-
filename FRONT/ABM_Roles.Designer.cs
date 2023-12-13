@@ -153,6 +153,7 @@
             // uC_DGV1
             // 
             resources.ApplyResources(this.uC_DGV1, "uC_DGV1");
+            this.uC_DGV1.ForeColor = System.Drawing.Color.Black;
             this.uC_DGV1.ModoSeleccion = System.Windows.Forms.DataGridViewSelectionMode.RowHeaderSelect;
             this.uC_DGV1.Multiseleccion = true;
             this.uC_DGV1.Name = "uC_DGV1";

@@ -45,6 +45,8 @@
             this.uC_txtSoloNumerosDNI = new FRONT.Controles.UC_txtSoloNumeros();
             this.uC_DGV1 = new FRONT.Controles.UC_DGV();
             this.groupBoxCOBRO = new System.Windows.Forms.GroupBox();
+            this.uC_txtSoloDecimalCONSOLIDADO = new FRONT.Controles.UC_txtSoloDecimal();
+            this.labelCons = new System.Windows.Forms.Label();
             this.uC_txtSoloDecimalSaldo = new FRONT.Controles.UC_txtSoloDecimal();
             this.label10 = new System.Windows.Forms.Label();
             this.buttonFCImpo = new System.Windows.Forms.Button();
@@ -66,8 +68,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.comboBoxMP = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.uC_txtSoloDecimalCONSOLIDADO = new FRONT.Controles.UC_txtSoloDecimal();
-            this.labelCons = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBoxCOBRO.SuspendLayout();
@@ -82,7 +82,7 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(-1, 20);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1305, 70);
+            this.panel1.Size = new System.Drawing.Size(1357, 70);
             this.panel1.TabIndex = 4;
             // 
             // button4
@@ -99,7 +99,7 @@
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button4.Location = new System.Drawing.Point(1102, 6);
+            this.button4.Location = new System.Drawing.Point(1164, 3);
             this.button4.Name = "button4";
             this.button4.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.button4.Size = new System.Drawing.Size(188, 58);
@@ -280,6 +280,28 @@
             this.groupBoxCOBRO.Size = new System.Drawing.Size(1291, 172);
             this.groupBoxCOBRO.TabIndex = 68;
             this.groupBoxCOBRO.TabStop = false;
+            // 
+            // uC_txtSoloDecimalCONSOLIDADO
+            // 
+            this.uC_txtSoloDecimalCONSOLIDADO.BackColor = System.Drawing.Color.Transparent;
+            this.uC_txtSoloDecimalCONSOLIDADO.Enabled = false;
+            this.uC_txtSoloDecimalCONSOLIDADO.Location = new System.Drawing.Point(708, 81);
+            this.uC_txtSoloDecimalCONSOLIDADO.Name = "uC_txtSoloDecimalCONSOLIDADO";
+            this.uC_txtSoloDecimalCONSOLIDADO.Size = new System.Drawing.Size(284, 44);
+            this.uC_txtSoloDecimalCONSOLIDADO.SoloLectura = false;
+            this.uC_txtSoloDecimalCONSOLIDADO.TabIndex = 84;
+            this.uC_txtSoloDecimalCONSOLIDADO.Texto = "";
+            // 
+            // labelCons
+            // 
+            this.labelCons.AutoSize = true;
+            this.labelCons.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCons.ForeColor = System.Drawing.Color.OrangeRed;
+            this.labelCons.Location = new System.Drawing.Point(505, 81);
+            this.labelCons.Name = "labelCons";
+            this.labelCons.Size = new System.Drawing.Size(207, 29);
+            this.labelCons.TabIndex = 83;
+            this.labelCons.Text = "CONSOLIDADO:";
             // 
             // uC_txtSoloDecimalSaldo
             // 
@@ -540,28 +562,6 @@
             this.label12.Size = new System.Drawing.Size(224, 29);
             this.label12.TabIndex = 78;
             this.label12.Text = "MEDIO DE PAGO:";
-            // 
-            // uC_txtSoloDecimalCONSOLIDADO
-            // 
-            this.uC_txtSoloDecimalCONSOLIDADO.BackColor = System.Drawing.Color.Transparent;
-            this.uC_txtSoloDecimalCONSOLIDADO.Enabled = false;
-            this.uC_txtSoloDecimalCONSOLIDADO.Location = new System.Drawing.Point(708, 81);
-            this.uC_txtSoloDecimalCONSOLIDADO.Name = "uC_txtSoloDecimalCONSOLIDADO";
-            this.uC_txtSoloDecimalCONSOLIDADO.Size = new System.Drawing.Size(284, 44);
-            this.uC_txtSoloDecimalCONSOLIDADO.SoloLectura = false;
-            this.uC_txtSoloDecimalCONSOLIDADO.TabIndex = 84;
-            this.uC_txtSoloDecimalCONSOLIDADO.Texto = "";
-            // 
-            // labelCons
-            // 
-            this.labelCons.AutoSize = true;
-            this.labelCons.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCons.ForeColor = System.Drawing.Color.OrangeRed;
-            this.labelCons.Location = new System.Drawing.Point(505, 81);
-            this.labelCons.Name = "labelCons";
-            this.labelCons.Size = new System.Drawing.Size(207, 29);
-            this.labelCons.TabIndex = 83;
-            this.labelCons.Text = "CONSOLIDADO:";
             // 
             // Generar_Factura
             // 

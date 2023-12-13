@@ -273,7 +273,7 @@
             // 
             // uC_DGV1
             // 
-            this.uC_DGV1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uC_DGV1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uC_DGV1.ForeColor = System.Drawing.Color.Black;
             this.uC_DGV1.Location = new System.Drawing.Point(442, 383);
             this.uC_DGV1.ModoSeleccion = System.Windows.Forms.DataGridViewSelectionMode.RowHeaderSelect;

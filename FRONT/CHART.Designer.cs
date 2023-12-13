@@ -90,6 +90,7 @@
             this.button4.Text = "CERRAR";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label2
             // 
@@ -133,7 +134,6 @@
             this.chartUnidadesCaras.Size = new System.Drawing.Size(507, 275);
             this.chartUnidadesCaras.TabIndex = 7;
             this.chartUnidadesCaras.Text = "chart2";
-          
             // 
             // chartMejoresClientes
             // 
